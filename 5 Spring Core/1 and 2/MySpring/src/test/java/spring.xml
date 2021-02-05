@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+	<bean id = "customer" class = "com.vunnam.MySpring.Customer">
+		<!-- <property name="customerId" value = "10"/>
+		<property name="customerName" value = "Vunnam"/>
+		<property name="customerContact" value = "8900000000"/>
+		<property name="customerAddress" ref = "address"/> -->
+		<constructor-arg type="int" value = "10"/>
+		<constructor-arg type ="java.lang.String" value="Vunnam"/>
+		<constructor-arg type="java.lang.String" value = "8900000000"/>
+		<constructor-arg type="com.vunnam.MySpring.Address" ref="address"/>
+		
+	</bean>
+	<bean id="address" class = "com.vunnam.MySpring.Address">
+		<property name="street" value = "WallStreet"/>
+		<property name="state" value = "Maharastra"/>
+		<property name="zip" value = "012450"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	<bean id ="listQuestion" class="com.vunnam.MySpring.ListQuestion">
+		<property name="questionId" value="1"/>
+		<property name="question" value="Sample Question"/>
+		<property name="answers">
+			<list>
+				<value>Answer 1</value>
+				<value>Answer 2</value>
+				<value>Answer 3</value>
+				<value>Answer 4</value>
+			</list>
+		</property>
+	</bean>
+	<bean id ="setQuestion" class="com.vunnam.MySpring.SetQuestion">
+		<property name="questionId" value="2"/>
+		<property name="question" value="Sample Question"/>
+		<property name="answers">
+			<set>
+				<value>Answer 1</value>
+				<value>Answer 2</value>
+				<value>Answer 3</value>
+				<value>Answer 4</value>
+			</set>
+		</property>
+	</bean>
+	<bean id ="mapQuestion" class="com.vunnam.MySpring.MapQuestion">
+		<property name="questionId" value="3"/>
+		<property name="question" value="Sample Question"/>
+		<property name="answers">
+			<map>
+				<entry key="1" value="Answer 1"/>
+				<entry key="2" value="Answer 2"/>
+				<entry key="3" value="Answer 3"/>
+				<entry key="4" value="Answer 4"/>
+			</map>
+		</property>
+	</bean>
+
+</beans>
