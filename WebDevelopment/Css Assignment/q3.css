@@ -1,0 +1,21 @@
+body{
+    background-color:mediumturquoise
+}
+
+
+.p1
+{
+    text-transform: uppercase;
+}
+
+.p2
+{
+    text-transform: lowercase;
+
+
+}
+
+.p3
+{
+    text-transform: capitalize;
+}

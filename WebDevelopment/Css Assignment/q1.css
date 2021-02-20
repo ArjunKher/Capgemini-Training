@@ -1,0 +1,38 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.a1
+{
+    background-color: aqua;
+  margin-bottom: 0;
+  padding: 0;
+
+
+}
+
+.a2
+{
+    background-color: cadetblue;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+.a3
+{
+    background-color: darkblue;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+.a4
+{
+    background-color: darkorange;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
+}
