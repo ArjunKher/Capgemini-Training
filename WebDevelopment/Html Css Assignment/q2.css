@@ -1,0 +1,26 @@
+body{
+   background-color: violet;
+}
+
+
+input{
+    padding: 6px;
+    font-size: medium;
+    border-radius: 4px;
+    background-color:thistle;
+}
+
+label
+{
+    width: 200px;
+    display: inline-block;
+}
+
+button
+{
+    border-radius: 5px;
+}
+
+legend{
+    border: 1px solid black;
+}
