@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd 
+       http://www.springframework.org/schema/context 
+       https://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id="project" class="com.example.demo.Project">
+
+
+
+<property name="subject1" value="83"></property>
+<property name="subject2" value="92"></property>
+<property name="subject3" value="99"></property>
+<property name="subject4" value="61"></property>
+<property name="subject5" value="100"></property>
+
+
+
+
+</bean>
+
+       </beans>
