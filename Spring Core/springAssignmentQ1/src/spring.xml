@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="customer" class="org.springcore.assignment.Customer" >
+		<constructor-arg value="101" />
+		<constructor-arg value="Saurabh Kumar" />
+		<constructor-arg value="123456" />
+	    <constructor-arg ref="address" />	
+	</bean>
+	
+	<bean id="address" class="org.springcore.assignment.Address">
+		<constructor-arg value="Dalal Street" />
+		<constructor-arg value="Mumbai" />
+		<constructor-arg value="Maharashtra" />
+		<constructor-arg value="43332" />
+		<constructor-arg value="India" />
+	</bean>
+</beans>
